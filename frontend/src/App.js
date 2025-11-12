@@ -5,15 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
-import Update from './components/Update';
 import Nav from './components/Nav';
-
-import Reports from './components/Reports';
 import Login from './components/Login';
 import Register from './components/Register';
-import Search from './components/Search';
-import Upload from './components/Upload';
+
 import ThreeDModel from "./components/ThreeDModel";
 import Questions from "./components/Questions";
 import MediQAdd from "./components/MediQAdd";
@@ -37,16 +32,12 @@ function App() {
       
       
         <Routes>
-        <Route path = "/" element ={< Login/>}/>
+        <Route path = "/" element ={< DashboardU/>}/>
        
         <Route path = "/Login" element ={<Login />}/>
         
         <Route path = "/Register" element ={<Register />}/>
-       
-        <Route path = "/Search" element ={<Search />}/>
-        <Route path = "/Update/:id" element ={<Update/>}/>
-        <Route path = "/Reports" element ={<Reports/>}/>
-        <Route path = "/Upload" element ={<Upload/>}/>
+      
         <Route path = "/ThreeDModel" element ={<ThreeDModel />}/>
         <Route path="/MediQAdd/:partName" element={<MediQAdd />} />
         <Route path = "/PrintMed" element ={<PrintMed />}/>

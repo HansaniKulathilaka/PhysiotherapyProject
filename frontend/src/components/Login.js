@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Nav from './Nav';
-import Update from './Update';
-import Search from './Search';
-import Print from './Print';
+
 import { useNavigate ,Link} from 'react-router-dom';
 import axios from "axios";
 //hansani

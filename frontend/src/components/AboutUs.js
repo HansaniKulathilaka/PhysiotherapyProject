@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 //import React from "react";
 import Nav from './Nav';
 import Nav2 from './Nav2';
-import Email from './Email';
+
 
 function About() {
   
@@ -36,7 +36,7 @@ useEffect(() => {
 }, []);
 
   const handleSendReport = () =>{
-          const phoneNumber = "+94775484476";
+          const phoneNumber = "";
           const message = `Enter your message here and send`
           const WhatsAppUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
@@ -44,7 +44,7 @@ useEffect(() => {
       }
 
       const handlePhoneCall = () => {
-  const phoneNumber = "+94775484476"; // include country code
+  const phoneNumber = ""; // include country code
   const callUrl = `tel:${phoneNumber}`;
   window.open(callUrl, "_self");
 };
@@ -204,9 +204,7 @@ Our goal is to make every physiotherapy journey personalized, transparent, and d
     </div>
      </div>
 <div style={contactGridStyle}>
-    <div style={contactItemStyle}>
-    <Email/>
-    </div>
+    
 <div style={contactItemStyle}>
 <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-whatsapp-icon-png-image_3584845.jpg" alt="Whatsapp" /*width="300"*/ style={{ width: "100px", height: "100px", borderRadius: "50%", objectFit: "cover" }}/>
     <button 

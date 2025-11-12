@@ -1,14 +1,5 @@
 import React, { useState, useEffect, useRef ,Suspense} from "react";
 import Nav2 from './Nav2';
-
-import Update from './Update';
-import Search from './Search';
-import Print from './Print';
-import Email from './Email';
-import Files from './Files';
-
- 
-
 import { useNavigate ,useParams} from "react-router-dom";
 import axios from "axios";
 import { useReactToPrint } from "react-to-print";

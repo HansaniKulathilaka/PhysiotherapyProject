@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios"; 
 import Nav from './Nav';
-import Modelz from './Modelz';
 import MedicalReport from './MedicalReport';
 import { useLocation } from "react-router-dom";
 
