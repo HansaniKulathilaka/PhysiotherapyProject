@@ -32,7 +32,7 @@ function App() {
       
       
         <Routes>
-        <Route path = "/" element ={< Login/>}/>
+        <Route path = "/" element ={<Login />}/>
        
         <Route path = "/Login" element ={<Login />}/>
         

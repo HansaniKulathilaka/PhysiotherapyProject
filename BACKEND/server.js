@@ -51,14 +51,14 @@ connection.once("open" , ()  => {
     console.log("mongo DB connection is successful! ");
 })
 
-const stockRouter = require("./routes/Stock.js");
-app.use("/stock",stockRouter);
+/*const stockRouter = require("./routes/Stock.js");
+app.use("/stock",stockRouter);*/
 
 const userRouter = require("./routes/user.js");
 app.use("/user",userRouter);
 
-const ChatRouter = require("./routes/Chat.js");
-app.use("/chat",ChatRouter);
+/*const ChatRouter = require("./routes/Chat.js");
+app.use("/chat",ChatRouter);*/
 
 const fileRouter = require("./routes/Files.js");
 app.use("/files",fileRouter);
